@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Title"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_3_docs_component_en#Title - HTL">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Stock"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <stock
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Stock Symbol:"
+                        name="./symbol"/>
+                    <summary
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Summary of Feed:"
+                        name="./summary"/>
+                    <requestDate
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showRequestDate"
+                        text="Request Date"
+                        value="true"/>
+                    <requestTime
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showRequestTime"
+                        text="Request Time"
+                        value="true"/>
+                </items>
+            </column1>
+            <column2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="More Stock Options"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <items jcr:primaryType="nt:unstructured">
+                    <upDown
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showUpDown"
+                        text="Show Up/Down?"
+                        value="true"/>
+                    <openPrice
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showOpenPrice"
+                        text="Show Open Price?"
+                        value="true"/>
+                    <rangeHigh
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showRangeHigh"
+                        text="Show Range High?"
+                        value="true"/>
+                    <rangeLow
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showRangeLow"
+                        text="Show Range Low?"
+                        value="true"/>
+                    <volume
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./showVolume"
+                        text="Show Volume?"
+                        value="true"/>
+                </items>
+            </column2>
+        </items>
+    </content>
+</jcr:root>
