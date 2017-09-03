@@ -7,14 +7,14 @@
     <jcr:content
         dam:assetState="processed"
         dam:relativePath="WeCreate/asset.jpg"
-        jcr:lastModified="{Date}2017-08-24T08:52:39.414+05:30"
+        jcr:lastModified="{Date}2017-09-03T14:42:54.605+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
             dam:ColorSpace="{Long}-1"
             dam:ExifOffset="{Long}232"
-            dam:extracted="{Date}2017-08-24T08:52:38.184+05:30"
+            dam:extracted="{Date}2017-09-03T14:42:54.165+05:30"
             dam:Fileformat="JPEG"
             dam:JpgFromRawLength="{Long}988"
             dam:JpgFromRawStart="{Long}382"
@@ -38,6 +38,8 @@
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             photoshop:ColorMode="{Long}3"
+            tiff:BitsPerSample="{Long}[8,8,8]"
+            tiff:BitsPerSample_xmpArrayType="rdf:Seq"
             tiff:Compression="{Long}6"
             tiff:ImageLength="{Long}51"
             tiff:ImageWidth="{Long}940"

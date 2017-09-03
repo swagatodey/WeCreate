@@ -4,4 +4,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Training Search"
     sling:resourceSuperType="foundation/components/search"
-    componentGroup="We.Train"/>
+    componentGroup="WeCreate"/>

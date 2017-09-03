@@ -1,0 +1,26 @@
+<form>
+  First name:<br>
+  <input type="text"id="fname" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" id="lname" name="lastname">
+  <br><br>
+  <input type="submit" id="submit" value="Submit">
+</form>
+<div id="success" style="display:none;">Successfully Updated the Name</div>
+<div id="error"  style="display:none;">Not Successfully Updated the Name</div>
+<script>
+$(document).ready(function(){
+    $("#submit").click(function(){
+        var Fname = $("#fname").val();
+	  	var Lname = $("#lname").val();
+        console.log(Fname + " " + Lname);
+        $.ajax({
+        	    type: 'POST', 
+            url: '/bin/formDataServlet',
+            data: "fname=" + Fname + "&lname=" + Lname,
+            success: $("#success").css("display","block")
+        });
+   });
+});
+</script>
